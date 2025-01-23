@@ -33,3 +33,4 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::patch('vacations/{vacation}/reject', [VacationController::class, 'reject'])
         ->name('vacaions.reject')->middleware(['auth:sanctum', 'can:vacations.reject']);
 });
+
